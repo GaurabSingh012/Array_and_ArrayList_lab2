@@ -5,4 +5,7 @@ class ArrayFunctions{
     void display(ArrayList<Integer> array) {
         System.out.println("ArrayList: " + array);
     }
+    void display(int[] array) {
+        System.out.println("Array: " + Arrays.toString(array));
+    }
 }
