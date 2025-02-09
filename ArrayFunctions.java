@@ -25,6 +25,8 @@ class ArrayFunctions{
         display(even); // Display even numbers
         display(odd); // Display odd numbers
     }
+
+    // Find and display the minimum difference between consecutive elements
     void minDif(int[] array) {
         int minDifference = Integer.MAX_VALUE;
         int index = -1;
@@ -41,4 +43,20 @@ class ArrayFunctions{
         System.out.println("Minimum difference: " + minDifference + " at index: " + index);
     }
 
+    // Convert an array to an ArrayList
+    private ArrayList<Integer> arrayToArrayList(int[] array) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int num : array) {
+            list.add(num); // Add each element to ArrayList
+        }
+        return list;
+    }
+    // Convert an ArrayList to an array
+    private int[] arrayListToArray(ArrayList<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i); // Copy elements to array
+        }
+        return array;
+    }
 }
