@@ -4,3 +4,7 @@
  * BATCH: 2023-27
  */
 import java.util.*;
+
+class Main {
+    
+}
