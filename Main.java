@@ -6,5 +6,9 @@
 import java.util.*;
 
 class Main {
-    
+    Scanner scan = new Scanner(System.in);
+        ArrayInput Ai = new ArrayInput(scan); // Create ArrayInput object
+        ArrayFunctions Af = new ArrayFunctions(); // Create ArrayFunctions object
+
+        int[] userArray = Ai.userInput(); // Get array input from user
 }
